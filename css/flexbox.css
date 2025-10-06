@@ -3,3 +3,17 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.cabecera__buscar__item {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .cabecera__buscar__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0 40px;
+  }
+}
