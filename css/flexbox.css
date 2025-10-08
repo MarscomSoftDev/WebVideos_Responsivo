@@ -60,14 +60,31 @@
     justify-content: space-between;
   }
   .menu__container {
-    width: 75px;
-    height: 90%;
+    left: 0;
+    width: 74px;
+    height: auto;
+    top: 80px;
   }
   .menu__lista {
     flex-direction: column;
-    height: 100%;
     justify-content: flex-start;
-    align-items: center;
-    gap: 40px;
+    padding-top: 15px;
+    gap: 33px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .menu__container {
+    width: 239px;
+    overflow: scroll;
+  }
+  .menu__lista :nth-child(2),
+  .menu__lista :nth-child(3),
+  .menu__lista :nth-child() {
+    display: flex;
+  }
+
+  .menu__lista {
+    height: auto;
   }
 }
